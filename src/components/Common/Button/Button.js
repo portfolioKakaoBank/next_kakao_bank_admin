@@ -2,9 +2,9 @@ import React from "react";
 import "./Button.css";
 
 function Button(props) {
-  const { variant = "btn-primary", children, ...rest } = props;
+  const { type = "", size = "", outLine = "", children, ...rest } = props;
   return (
-    <button className={`btn ${variant}`} {...rest}>
+    <button className={`btn ${type} ${size} ${outLine}`} {...rest}>
       {children}
     </button>
   );

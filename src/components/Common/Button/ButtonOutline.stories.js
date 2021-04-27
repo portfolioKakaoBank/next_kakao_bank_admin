@@ -4,53 +4,44 @@ import Button from "./Button";
 export default {
   title: "Common/Button/Outline",
   component: Button,
+  args: {
+    children: "Button",
+  },
 };
 
-export const outlinePrimary = () => (
-  <Button variant="btn-outline-primary">primary</Button>
+const Template = (args) => (
+  <Button onClick={() => console.log("click button")} {...args} />
 );
-export const outlineSecondary = () => (
-  <Button variant="btn-outline-secondary">secondary</Button>
-);
-export const outlineSuccess = () => (
-  <Button variant="btn-outline-success">success</Button>
-);
-export const outlineInfo = () => (
-  <Button variant="btn-outline-info">info</Button>
-);
-export const outlineWarning = () => (
-  <Button variant="btn-outline-warning">warning</Button>
-);
-export const outlineDanger = () => (
-  <Button variant="btn-outline-danger">danger</Button>
-);
-export const outlineLight = () => (
-  <Button variant="btn-outline-light">light</Button>
-);
-export const outlineDark = () => (
-  <Button variant="btn-outline-dark">dark</Button>
-);
-export const outlineInverse = () => (
-  <Button variant="btn-outline-inverse">inverse</Button>
-);
-export const outlineBlack = () => (
-  <Button variant="btn-outline-black">black</Button>
-);
-export const outlineWhite = () => (
-  <Button variant="btn-outline-white">white</Button>
-);
-export const outlineGrey = () => (
-  <Button variant="btn-outline-grey">grey</Button>
-);
-export const outlineMuted = () => (
-  <Button variant="btn-outline-muted">muted</Button>
-);
-export const outlineSilver = () => (
-  <Button variant="btn-outline-silver">silver</Button>
-);
-export const outlineLime = () => (
-  <Button variant="btn-outline-lime">lime</Button>
-);
-export const outlineAqua = () => (
-  <Button variant="btn-outline-aqua">aqua</Button>
-);
+
+export const PrimaryOutLine = Template.bind({});
+PrimaryOutLine.args = { outLine: "btn-outline-primary" };
+export const SecondaryOutLine = Template.bind({});
+SecondaryOutLine.args = { outLine: "btn-outline-secondary" };
+export const SuccessOutLine = Template.bind({});
+SuccessOutLine.args = { outLine: "btn-outline-success" };
+export const InfoOutLine = Template.bind({});
+InfoOutLine.args = { outLine: "btn-outline-info" };
+export const WarningOutLine = Template.bind({});
+WarningOutLine.args = { outLine: "btn-outline-warning" };
+export const DangerOutLine = Template.bind({});
+DangerOutLine.args = { outLine: "btn-outline-danger" };
+export const LightOutLine = Template.bind({});
+LightOutLine.args = { outLine: "btn-outline-light" };
+export const DarkOutLine = Template.bind({});
+DarkOutLine.args = { outLine: "btn-outline-dark" };
+export const InverseOutLine = Template.bind({});
+InverseOutLine.args = { outLine: "btn-outline-inverse" };
+export const BlackOutLine = Template.bind({});
+BlackOutLine.args = { outLine: "btn-outline-black" };
+export const WhiteOutLine = Template.bind({});
+WhiteOutLine.args = { outLine: "btn-outline-white" };
+export const GreyOutLine = Template.bind({});
+GreyOutLine.args = { outLine: "btn-outline-grey" };
+export const MutedOutLine = Template.bind({});
+MutedOutLine.args = { outLine: "btn-outline-muted" };
+export const SilverOutLine = Template.bind({});
+SilverOutLine.args = { outLine: "btn-outline-silver" };
+export const LimeOutLine = Template.bind({});
+LimeOutLine.args = { outLine: "btn-outline-lime" };
+export const AquaOutLine = Template.bind({});
+AquaOutLine.args = { outLine: "btn-outline-aqua" };

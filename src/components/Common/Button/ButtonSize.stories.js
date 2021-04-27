@@ -4,17 +4,19 @@ import Button from "./Button";
 export default {
   title: "Common/Button/Size",
   component: Button,
+  args: {
+    color: "btn-primary",
+    children: "Button",
+  },
 };
 
-export const largeButton = () => (
-  <Button variant="btn-primary btn-lg">Large Button</Button>
+const Template = (args) => (
+  <Button onClick={() => console.log("click button")} {...args} />
 );
-export const defaultButton = () => (
-  <Button variant="btn-primary">Default Button</Button>
-);
-export const smallButton = () => (
-  <Button variant="btn-primary btn-sm">Small Button</Button>
-);
-export const extraButton = () => (
-  <Button variant="btn-primary btn-xs">Extra Button</Button>
-);
+
+export const LgSize = Template.bind({});
+LgSize.args = { size: "btn-lg" };
+export const SmSize = Template.bind({});
+SmSize.args = { size: "btn-sm" };
+export const XsSize = Template.bind({});
+XsSize.args = { size: "btn-xs" };
