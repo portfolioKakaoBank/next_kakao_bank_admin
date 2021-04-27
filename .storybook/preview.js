@@ -1,6 +1,7 @@
 import { addDecorator } from "@storybook/react";
 import Center from "../src/components/Utility/Center/Center";
 import { withConsole } from "@storybook/addon-console";
+import "../public/styles/app.min.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
